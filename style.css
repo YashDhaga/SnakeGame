@@ -1,0 +1,130 @@
+@import url('http://fonts.cdnfonts.com/css/arcade');
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0;
+  background-color: #82af0b;
+}
+
+#game-board {
+  background-color: #9dba2b;
+  background-image: url('gridBgAsset 3.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 80vmin;
+  height: 80vmin;
+  /* width: 35vw; */
+  /* height: 80vh; */
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.tile {
+  background-color: #7a7a78;
+  padding: 2px;
+}
+
+.snake {
+  /* border: 0.25vmin solid black; */
+  background-image: url('newHeadAsset 7.png');
+  /* background-image: url('snake.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.snakeBody {
+  background-image: url('newBodyAsset 6.png');
+  /* background-image: url('snakeBodyAsset 4@4x.png'); */
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left {
+  transform: rotate(270deg);
+}
+
+.right {
+  transform: rotate(90deg);
+}
+
+.up {
+  transform: rotate(0deg);
+}
+
+.down {
+  /* background-image: url('headDownAsset 8.png'); */
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+  transform: rotate(180deg);
+}
+
+.food {
+  background-color: hsl(50, 100%, 50%);
+  border: 0.25vmin solid black;
+}
+
+#score {
+  color: #fff;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: 'Arcade normal', sans-serif;
+  font-size: 40px;
+  height: auto;
+  width: auto;
+}
+
+#end {
+  /* background-color: rgb(255, 0, 0); */
+  background-color: beige;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+  align-self: center;
+}
+
+#result {
+  display: none;
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  font-family: 'Arcade normal', sans-serif;
+}
+#gameOver {
+  color: red;
+  font-size: 40px;
+  text-align: center;
+}
+#replay {
+  color: rgb(144, 144, 55);
+  font-size: 15px;
+}
+
+#title{
+  color:black;
+  width:30vw;
+  font-size: 3em;
+  font-family: 'Arcade normal', sans-serif;
+  position:absolute;
+  top:35vh;
+  left:5vw;
+}
+#img{
+  width:30vw;
+}
+
+img{
+  height:60vh;
+  width:30vw;
+  position:absolute;
+  bottom: 5vh;
+  right:0vw;
+}
+

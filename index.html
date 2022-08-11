@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer type="module"></script>
+    <!-- defer type module because we want our js part to be in multiple files (separate for snake, food etc) and so the browser knows that we are going to use import and export commands, instead of having just one giant js file etc. -->
+  </head>
+  <body>
+    <div id="score">Score:</div>
+    <div id="title">
+      <div>The</div>
+      <div>Snake</div>
+      <div>Game</div>
+    </div>
+    <div id="game-board"></div>
+    <div id="img">
+      <img src="snake.png" />
+    </div>
+    <div id="result">
+      <p id="gameOver">GAME OVER</p>
+      <p id="replay">Press spacebar to restart</p>
+    </div>
+  </body>
+</html>
